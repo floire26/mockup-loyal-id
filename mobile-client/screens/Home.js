@@ -100,7 +100,7 @@ export default function Home() {
     const [items, setItems] = useState(malls);
     const [text, setText] = useState('');
     const handlePress = () => {
-        axios.get(`http://192.168.110.2:3000/fb/${text}`) // Server URL from local
+        axios.get(`http://192.168.1.103:3000/fb/${text}`) // Server URL from local -> need to be configured
         .then(response => response.data.join(',\n   '))
         .then(output => Alert.alert('API #1 Call Result', `[\n   ${output}\n]`))
         .catch(error => Alert.alert('API #1 Call Error', error.message))

@@ -4,7 +4,6 @@ const port = 3000;
 
 // Level 1 API
 const fizzBuzz = (num, i = 1, result = []) => {
-
     if (i % 3 === 0) {
         if (i % 5  === 0 ) {
             result.push('Buzz Lightyear');
